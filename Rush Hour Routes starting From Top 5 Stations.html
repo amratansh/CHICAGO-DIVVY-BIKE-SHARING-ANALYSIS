@@ -1,0 +1,2944 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_ac7778b59fc54a5d9b86b9707013fe0f {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ac7778b59fc54a5d9b86b9707013fe0f" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_ac7778b59fc54a5d9b86b9707013fe0f = L.map(
+                                  'map_ac7778b59fc54a5d9b86b9707013fe0f',
+                                  {center: [41.881832,-87.623177],
+                                  zoom: 14,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_e8b9392f1ada4e89881f6fbb25bcd925 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+        
+    
+
+            var marker_d85cecc44db5457fa93a737f173b9361 = L.marker(
+                [41.882242,-87.64106600000002],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_065b0827e3044e259ae829d94baa733e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'indigo',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d85cecc44db5457fa93a737f173b9361.setIcon(icon_065b0827e3044e259ae829d94baa733e);
+            
+    
+            var popup_958d23d9da8649b484f93d1b5e12cc8b = L.popup({maxWidth: '300'});
+
+            
+                var html_e3a1bff6bc29474082cda9db5b16788e = $('<div id="html_e3a1bff6bc29474082cda9db5b16788e" style="width: 100.0%; height: 100.0%;">Clinton St & Madison St</div>')[0];
+                popup_958d23d9da8649b484f93d1b5e12cc8b.setContent(html_e3a1bff6bc29474082cda9db5b16788e);
+            
+
+            marker_d85cecc44db5457fa93a737f173b9361.bindPopup(popup_958d23d9da8649b484f93d1b5e12cc8b);
+
+            
+        
+    
+                var poly_line_5c04aa51839640b9a850a3230bb3ca57 = L.polyline(
+                    [[41.882242, -87.64106600000002], [41.886024, -87.624117]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_b89d40d1fc814198acdd084c4920247a = L.marker(
+                [41.886024,-87.624117],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_ef4e993c8615427ab26c017afcab5fa6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b89d40d1fc814198acdd084c4920247a.setIcon(icon_ef4e993c8615427ab26c017afcab5fa6);
+            
+    
+                var poly_line_fa6d4b2f635d441f861d05019b7fabee = L.polyline(
+                    [[41.882242, -87.64106600000002], [41.886024, -87.624117]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_19c09267b89c4c4aac84e78a113d7d33 = L.marker(
+                [41.882242,-87.64106600000002],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_af2c412d1741400bbf61422eff2ece72 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'indigo',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_19c09267b89c4c4aac84e78a113d7d33.setIcon(icon_af2c412d1741400bbf61422eff2ece72);
+            
+    
+            var popup_e26dc7917eca487cb38e4aa6f1868141 = L.popup({maxWidth: '300'});
+
+            
+                var html_eafa8157035b435da385dc6e1bd4234c = $('<div id="html_eafa8157035b435da385dc6e1bd4234c" style="width: 100.0%; height: 100.0%;">Clinton St & Madison St</div>')[0];
+                popup_e26dc7917eca487cb38e4aa6f1868141.setContent(html_eafa8157035b435da385dc6e1bd4234c);
+            
+
+            marker_19c09267b89c4c4aac84e78a113d7d33.bindPopup(popup_e26dc7917eca487cb38e4aa6f1868141);
+
+            
+        
+    
+                var poly_line_fc1f531f6cb14022b6fabd8efe1868be = L.polyline(
+                    [[41.882242, -87.64106600000002], [41.893992, -87.62931800000001]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_864fb55b83654957bb7ec62434335be0 = L.marker(
+                [41.893992,-87.62931800000001],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_15b1a97925dc409ca3220f5802d9a2d5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_864fb55b83654957bb7ec62434335be0.setIcon(icon_15b1a97925dc409ca3220f5802d9a2d5);
+            
+    
+                var poly_line_43eb92bf20af42538ae66cfa84ab5b73 = L.polyline(
+                    [[41.882242, -87.64106600000002], [41.893992, -87.62931800000001]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_ff51172d0ae548eb916ac3d5c6107910 = L.marker(
+                [41.882242,-87.64106600000002],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_0d3a1cd1cab54a5fa17033373e75a705 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'indigo',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ff51172d0ae548eb916ac3d5c6107910.setIcon(icon_0d3a1cd1cab54a5fa17033373e75a705);
+            
+    
+            var popup_8c490dcc1c284deca1344993e9642f19 = L.popup({maxWidth: '300'});
+
+            
+                var html_9a38cceccecc4b79a31f26d43c913d12 = $('<div id="html_9a38cceccecc4b79a31f26d43c913d12" style="width: 100.0%; height: 100.0%;">Clinton St & Madison St</div>')[0];
+                popup_8c490dcc1c284deca1344993e9642f19.setContent(html_9a38cceccecc4b79a31f26d43c913d12);
+            
+
+            marker_ff51172d0ae548eb916ac3d5c6107910.bindPopup(popup_8c490dcc1c284deca1344993e9642f19);
+
+            
+        
+    
+                var poly_line_abc7344af32149feb20eca87ab65f2cd = L.polyline(
+                    [[41.882242, -87.64106600000002], [41.8810317, -87.62408432]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_1a264d725657443e91041acd30f0cf39 = L.marker(
+                [41.8810317,-87.62408432],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_7cf8054f00104efc9b69a7cef827ed82 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1a264d725657443e91041acd30f0cf39.setIcon(icon_7cf8054f00104efc9b69a7cef827ed82);
+            
+    
+                var poly_line_b66b6b2de04d49358b8730f331826eea = L.polyline(
+                    [[41.882242, -87.64106600000002], [41.8810317, -87.62408432]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_f686b1b034ea46a78024cbbdd745c4bd = L.marker(
+                [41.879255,-87.639904],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_9e0d38610c7b493492014a3fab33ef18 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f686b1b034ea46a78024cbbdd745c4bd.setIcon(icon_9e0d38610c7b493492014a3fab33ef18);
+            
+    
+            var popup_3c9b78393d0643ef95a77aa0acd09ed5 = L.popup({maxWidth: '300'});
+
+            
+                var html_67bf1e2fab1c4fd2a3fe3d22d1e448a2 = $('<div id="html_67bf1e2fab1c4fd2a3fe3d22d1e448a2" style="width: 100.0%; height: 100.0%;">Canal St & Adams St</div>')[0];
+                popup_3c9b78393d0643ef95a77aa0acd09ed5.setContent(html_67bf1e2fab1c4fd2a3fe3d22d1e448a2);
+            
+
+            marker_f686b1b034ea46a78024cbbdd745c4bd.bindPopup(popup_3c9b78393d0643ef95a77aa0acd09ed5);
+
+            
+        
+    
+                var poly_line_da5334aa18fc43f7932804deec1f1135 = L.polyline(
+                    [[41.879255, -87.639904], [41.890912, -87.626804]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_0f0527486f9342ee8a3465b7094d5cf6 = L.marker(
+                [41.890912,-87.626804],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_f06d122c0b2249379bec884cd3feefdb = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0f0527486f9342ee8a3465b7094d5cf6.setIcon(icon_f06d122c0b2249379bec884cd3feefdb);
+            
+    
+                var poly_line_5fd0b229982641eb9ffcfa48adf15c7a = L.polyline(
+                    [[41.879255, -87.639904], [41.890912, -87.626804]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_d0507e7b6f9a4873bdfdbbc6e138b95e = L.marker(
+                [41.879255,-87.639904],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_919b771f94ee4b06a4f2878d70fdff89 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d0507e7b6f9a4873bdfdbbc6e138b95e.setIcon(icon_919b771f94ee4b06a4f2878d70fdff89);
+            
+    
+            var popup_5e64d3647ae742e190c633d7c74b76d3 = L.popup({maxWidth: '300'});
+
+            
+                var html_524597a497e14a98859a8aceb1acccac = $('<div id="html_524597a497e14a98859a8aceb1acccac" style="width: 100.0%; height: 100.0%;">Canal St & Adams St</div>')[0];
+                popup_5e64d3647ae742e190c633d7c74b76d3.setContent(html_524597a497e14a98859a8aceb1acccac);
+            
+
+            marker_d0507e7b6f9a4873bdfdbbc6e138b95e.bindPopup(popup_5e64d3647ae742e190c633d7c74b76d3);
+
+            
+        
+    
+                var poly_line_6bc175cab9f84b6e9ee342cb6673ec92 = L.polyline(
+                    [[41.879255, -87.639904], [41.890011, -87.626293]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_4e8d3ff4fac54f70886c2267bdca24e5 = L.marker(
+                [41.890011,-87.626293],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_532fe280dfe94493bde4f7a945ca8974 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4e8d3ff4fac54f70886c2267bdca24e5.setIcon(icon_532fe280dfe94493bde4f7a945ca8974);
+            
+    
+                var poly_line_00b9d294427f41b2bc402ac21fc81295 = L.polyline(
+                    [[41.879255, -87.639904], [41.890011, -87.626293]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_09af8d557c124ae7b99c0d984f7eb8b7 = L.marker(
+                [41.882242,-87.64106600000002],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_be748bf8f31f4e21969d3b41eaf0fca2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'indigo',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_09af8d557c124ae7b99c0d984f7eb8b7.setIcon(icon_be748bf8f31f4e21969d3b41eaf0fca2);
+            
+    
+            var popup_4e1ed32df3984b4fa01c4e958db38618 = L.popup({maxWidth: '300'});
+
+            
+                var html_0b4f089ad5874bb689d01ee661598bcf = $('<div id="html_0b4f089ad5874bb689d01ee661598bcf" style="width: 100.0%; height: 100.0%;">Clinton St & Madison St</div>')[0];
+                popup_4e1ed32df3984b4fa01c4e958db38618.setContent(html_0b4f089ad5874bb689d01ee661598bcf);
+            
+
+            marker_09af8d557c124ae7b99c0d984f7eb8b7.bindPopup(popup_4e1ed32df3984b4fa01c4e958db38618);
+
+            
+        
+    
+                var poly_line_2e4babbe94974014b76d3ec69a6596a2 = L.polyline(
+                    [[41.882242, -87.64106600000002], [41.87817, -87.631985]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_0366cc5f04a1432eb31dcc2263ee7dcd = L.marker(
+                [41.87817,-87.631985],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_d7583db7e71043b5ab40a68d2cfe37f2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0366cc5f04a1432eb31dcc2263ee7dcd.setIcon(icon_d7583db7e71043b5ab40a68d2cfe37f2);
+            
+    
+                var poly_line_047a1770eb4c463b9f161b889fd11d48 = L.polyline(
+                    [[41.882242, -87.64106600000002], [41.87817, -87.631985]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_0efe121399fc4a80b4dc5a4ab0aed86f = L.marker(
+                [41.88917683258,-87.6385057718],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_785be11c60b447a5ad45d7f76b2b3327 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0efe121399fc4a80b4dc5a4ab0aed86f.setIcon(icon_785be11c60b447a5ad45d7f76b2b3327);
+            
+    
+            var popup_95028849fc48498bb8a8c5f1f412b546 = L.popup({maxWidth: '300'});
+
+            
+                var html_b2a3893fac494d60a826ff0a3c316916 = $('<div id="html_b2a3893fac494d60a826ff0a3c316916" style="width: 100.0%; height: 100.0%;">Kingsbury St & Kinzie St</div>')[0];
+                popup_95028849fc48498bb8a8c5f1f412b546.setContent(html_b2a3893fac494d60a826ff0a3c316916);
+            
+
+            marker_0efe121399fc4a80b4dc5a4ab0aed86f.bindPopup(popup_95028849fc48498bb8a8c5f1f412b546);
+
+            
+        
+    
+                var poly_line_91ac73b47f174238a1a962cddd6cb702 = L.polyline(
+                    [[41.88917683258, -87.6385057718], [41.881319815, -87.6295209193]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_fa1bc81f30fb41d686bed11a45bc9d95 = L.marker(
+                [41.881319815,-87.6295209193],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_067b7b1524004a41b088c68583b6c1ac = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fa1bc81f30fb41d686bed11a45bc9d95.setIcon(icon_067b7b1524004a41b088c68583b6c1ac);
+            
+    
+                var poly_line_9575b2fbfa7b43f2b43eccf6bb454142 = L.polyline(
+                    [[41.88917683258, -87.6385057718], [41.881319815, -87.6295209193]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_5815d0d5beed4e4189df88cb47f8cc1d = L.marker(
+                [41.88917683258,-87.6385057718],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_931c883e67be4609965bec50ba989b12 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5815d0d5beed4e4189df88cb47f8cc1d.setIcon(icon_931c883e67be4609965bec50ba989b12);
+            
+    
+            var popup_2597cdddb97743099ba7158f89c13153 = L.popup({maxWidth: '300'});
+
+            
+                var html_275c5e6aa15745ddbc9332be24969e66 = $('<div id="html_275c5e6aa15745ddbc9332be24969e66" style="width: 100.0%; height: 100.0%;">Kingsbury St & Kinzie St</div>')[0];
+                popup_2597cdddb97743099ba7158f89c13153.setContent(html_275c5e6aa15745ddbc9332be24969e66);
+            
+
+            marker_5815d0d5beed4e4189df88cb47f8cc1d.bindPopup(popup_2597cdddb97743099ba7158f89c13153);
+
+            
+        
+    
+                var poly_line_ebdc6297dd3f49c7963acf18eb0b02f9 = L.polyline(
+                    [[41.88917683258, -87.6385057718], [41.92533, -87.6658]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_a50e4e74071941bcb4b4d17b8d557290 = L.marker(
+                [41.92533,-87.6658],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_31e6ce8320674f62a3c0b9af54cc5fc9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a50e4e74071941bcb4b4d17b8d557290.setIcon(icon_31e6ce8320674f62a3c0b9af54cc5fc9);
+            
+    
+                var poly_line_b2ed8b5833ee46ccbf38803f104bc290 = L.polyline(
+                    [[41.88917683258, -87.6385057718], [41.92533, -87.6658]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_227fe4ca11874024b38f4350b68248a1 = L.marker(
+                [41.88917683258,-87.6385057718],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_a580f88cf8974200996b6e7563cd122e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_227fe4ca11874024b38f4350b68248a1.setIcon(icon_a580f88cf8974200996b6e7563cd122e);
+            
+    
+            var popup_8c41e14994154dd492fade6db9f3e466 = L.popup({maxWidth: '300'});
+
+            
+                var html_6589df3af0384ba0b57e82939526d792 = $('<div id="html_6589df3af0384ba0b57e82939526d792" style="width: 100.0%; height: 100.0%;">Kingsbury St & Kinzie St</div>')[0];
+                popup_8c41e14994154dd492fade6db9f3e466.setContent(html_6589df3af0384ba0b57e82939526d792);
+            
+
+            marker_227fe4ca11874024b38f4350b68248a1.bindPopup(popup_8c41e14994154dd492fade6db9f3e466);
+
+            
+        
+    
+                var poly_line_c50a40f6f52b40e2afd69f5b2d463553 = L.polyline(
+                    [[41.88917683258, -87.6385057718], [41.882242, -87.64106600000002]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_992301c1685d4a44aa58a56def48861a = L.marker(
+                [41.882242,-87.64106600000002],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_afa856e86e53447db5fa159990c71981 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_992301c1685d4a44aa58a56def48861a.setIcon(icon_afa856e86e53447db5fa159990c71981);
+            
+    
+                var poly_line_0c6e350eb8014511bbf19ce10c0d3138 = L.polyline(
+                    [[41.88917683258, -87.6385057718], [41.882242, -87.64106600000002]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_fcd7780d780a4f5589407a3204108b62 = L.marker(
+                [41.88917683258,-87.6385057718],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_e5afb6e6ff7c45e587cb4538520c70c7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fcd7780d780a4f5589407a3204108b62.setIcon(icon_e5afb6e6ff7c45e587cb4538520c70c7);
+            
+    
+            var popup_e113295cfa4a4f77affb52e5c3b45450 = L.popup({maxWidth: '300'});
+
+            
+                var html_9b63c8b86c2743fe989d01538dc0fda2 = $('<div id="html_9b63c8b86c2743fe989d01538dc0fda2" style="width: 100.0%; height: 100.0%;">Kingsbury St & Kinzie St</div>')[0];
+                popup_e113295cfa4a4f77affb52e5c3b45450.setContent(html_9b63c8b86c2743fe989d01538dc0fda2);
+            
+
+            marker_fcd7780d780a4f5589407a3204108b62.bindPopup(popup_e113295cfa4a4f77affb52e5c3b45450);
+
+            
+        
+    
+                var poly_line_e43f17a1b5f64cd7bf1f6f7c3d8710e8 = L.polyline(
+                    [[41.88917683258, -87.6385057718], [41.91021, -87.6435]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_f8fdf6b7335741f3a72954380a572381 = L.marker(
+                [41.91021,-87.6435],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_cebf395b17574ad8b7bcf7468aec3b62 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f8fdf6b7335741f3a72954380a572381.setIcon(icon_cebf395b17574ad8b7bcf7468aec3b62);
+            
+    
+                var poly_line_68f99ac094fe4460b3cdc967fa6a15ee = L.polyline(
+                    [[41.88917683258, -87.6385057718], [41.91021, -87.6435]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_4d0818763b3d4fd583978160585b52a6 = L.marker(
+                [41.879255,-87.639904],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_f1bfbeb34fa04c379fc2822c5da6c828 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4d0818763b3d4fd583978160585b52a6.setIcon(icon_f1bfbeb34fa04c379fc2822c5da6c828);
+            
+    
+            var popup_c7603d7393df44469c874de38a028875 = L.popup({maxWidth: '300'});
+
+            
+                var html_d7d24f7164344923b55f161a8237152d = $('<div id="html_d7d24f7164344923b55f161a8237152d" style="width: 100.0%; height: 100.0%;">Canal St & Adams St</div>')[0];
+                popup_c7603d7393df44469c874de38a028875.setContent(html_d7d24f7164344923b55f161a8237152d);
+            
+
+            marker_4d0818763b3d4fd583978160585b52a6.bindPopup(popup_c7603d7393df44469c874de38a028875);
+
+            
+        
+    
+                var poly_line_252ae4a660104fb89f193c4f5422bd3f = L.polyline(
+                    [[41.879255, -87.639904], [41.892154, -87.636928]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_192108bf8b324dc0b02f43bbdbfa25f9 = L.marker(
+                [41.892154,-87.636928],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_9050ba2134024d5eb92fbc5b7d8bce27 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_192108bf8b324dc0b02f43bbdbfa25f9.setIcon(icon_9050ba2134024d5eb92fbc5b7d8bce27);
+            
+    
+                var poly_line_344e2474d6684f0788a6e5d3e62f26f8 = L.polyline(
+                    [[41.879255, -87.639904], [41.892154, -87.636928]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_a0e6dbaf1d654edea27bfc94d7d30ff2 = L.marker(
+                [41.882242,-87.64106600000002],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_7ab59f03498045159c91bb70fe1d72bf = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'indigo',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a0e6dbaf1d654edea27bfc94d7d30ff2.setIcon(icon_7ab59f03498045159c91bb70fe1d72bf);
+            
+    
+            var popup_b2b207979c984eb48ecc689ff9a7e580 = L.popup({maxWidth: '300'});
+
+            
+                var html_8ffca6c68a1a4aa693643e935c7b01a8 = $('<div id="html_8ffca6c68a1a4aa693643e935c7b01a8" style="width: 100.0%; height: 100.0%;">Clinton St & Madison St</div>')[0];
+                popup_b2b207979c984eb48ecc689ff9a7e580.setContent(html_8ffca6c68a1a4aa693643e935c7b01a8);
+            
+
+            marker_a0e6dbaf1d654edea27bfc94d7d30ff2.bindPopup(popup_b2b207979c984eb48ecc689ff9a7e580);
+
+            
+        
+    
+                var poly_line_1f7c191936eb4fb7a2528c89e4ef6eda = L.polyline(
+                    [[41.882242, -87.64106600000002], [41.8854833079, -87.6523048564]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_e60f2249da2c4dbf85c63e993cdeba70 = L.marker(
+                [41.8854833079,-87.6523048564],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_2e026e82837649e2ae0550cc5e6e6983 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e60f2249da2c4dbf85c63e993cdeba70.setIcon(icon_2e026e82837649e2ae0550cc5e6e6983);
+            
+    
+                var poly_line_7ee74e1fb2e24c58a70fc7acef5bad5e = L.polyline(
+                    [[41.882242, -87.64106600000002], [41.8854833079, -87.6523048564]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_9e76fdbb61e346d68ede030b07c2aa64 = L.marker(
+                [41.88338,-87.64116999999996],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_f5977b38744c47fbb58a93e7a954ff7a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9e76fdbb61e346d68ede030b07c2aa64.setIcon(icon_f5977b38744c47fbb58a93e7a954ff7a);
+            
+    
+            var popup_a16eec3e80fb472a893cbe8b2c4af277 = L.popup({maxWidth: '300'});
+
+            
+                var html_5f1e096ba6f641aea8e71d67e0386c7d = $('<div id="html_5f1e096ba6f641aea8e71d67e0386c7d" style="width: 100.0%; height: 100.0%;">Clinton St & Washington Blvd</div>')[0];
+                popup_a16eec3e80fb472a893cbe8b2c4af277.setContent(html_5f1e096ba6f641aea8e71d67e0386c7d);
+            
+
+            marker_9e76fdbb61e346d68ede030b07c2aa64.bindPopup(popup_a16eec3e80fb472a893cbe8b2c4af277);
+
+            
+        
+    
+                var poly_line_95c5200812bc471984c3698e3a42ff6b = L.polyline(
+                    [[41.88338, -87.64116999999996], [41.886926, -87.65691899999999]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_5d4a9673ee304c0ab7ec899360004dbc = L.marker(
+                [41.886926,-87.65691899999999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_392b440b917f4718ad0bf699c60d0969 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5d4a9673ee304c0ab7ec899360004dbc.setIcon(icon_392b440b917f4718ad0bf699c60d0969);
+            
+    
+                var poly_line_f79874803e0d41ab81bc8104e97b773a = L.polyline(
+                    [[41.88338, -87.64116999999996], [41.886926, -87.65691899999999]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_78f7f83d921c4a4aab12cf36a51d4a7f = L.marker(
+                [41.882242,-87.64106600000002],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_f0c4492e20344d55b44a3f5c19d6fb7f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'indigo',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_78f7f83d921c4a4aab12cf36a51d4a7f.setIcon(icon_f0c4492e20344d55b44a3f5c19d6fb7f);
+            
+    
+            var popup_22013a3a442c4702ad261be844713006 = L.popup({maxWidth: '300'});
+
+            
+                var html_bc51a5a1bee64b7fa951fb7a50757993 = $('<div id="html_bc51a5a1bee64b7fa951fb7a50757993" style="width: 100.0%; height: 100.0%;">Clinton St & Madison St</div>')[0];
+                popup_22013a3a442c4702ad261be844713006.setContent(html_bc51a5a1bee64b7fa951fb7a50757993);
+            
+
+            marker_78f7f83d921c4a4aab12cf36a51d4a7f.bindPopup(popup_22013a3a442c4702ad261be844713006);
+
+            
+        
+    
+                var poly_line_ff4a34dc19384866b64a5b08f92882ea = L.polyline(
+                    [[41.882242, -87.64106600000002], [41.884241, -87.629634]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_7b292a628be7465d9f8e612ff7ee82e7 = L.marker(
+                [41.884241,-87.629634],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_d0fa3ae1647843e48ee94d7bd638b6a7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7b292a628be7465d9f8e612ff7ee82e7.setIcon(icon_d0fa3ae1647843e48ee94d7bd638b6a7);
+            
+    
+                var poly_line_5acf7582469e456d92687fb612402c2e = L.polyline(
+                    [[41.882242, -87.64106600000002], [41.884241, -87.629634]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_23d7826109fd4a0fa3b748597d094df8 = L.marker(
+                [41.88917683258,-87.6385057718],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_7147b3b16cf14677aabdd14abff18602 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_23d7826109fd4a0fa3b748597d094df8.setIcon(icon_7147b3b16cf14677aabdd14abff18602);
+            
+    
+            var popup_e43a3822d3f74bdeb11fbcf18a9859bf = L.popup({maxWidth: '300'});
+
+            
+                var html_55abbb18e07f4e49a16cda87603d56c4 = $('<div id="html_55abbb18e07f4e49a16cda87603d56c4" style="width: 100.0%; height: 100.0%;">Kingsbury St & Kinzie St</div>')[0];
+                popup_e43a3822d3f74bdeb11fbcf18a9859bf.setContent(html_55abbb18e07f4e49a16cda87603d56c4);
+            
+
+            marker_23d7826109fd4a0fa3b748597d094df8.bindPopup(popup_e43a3822d3f74bdeb11fbcf18a9859bf);
+
+            
+        
+    
+                var poly_line_c65b16de32854e408f5bc89214a2cb12 = L.polyline(
+                    [[41.88917683258, -87.6385057718], [41.882134, -87.625125]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_5397b7cbae0c455eaa8cb8ad007a4ae7 = L.marker(
+                [41.882134,-87.625125],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_a9777aaf9d5d4d4d893be32043e8d0f8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5397b7cbae0c455eaa8cb8ad007a4ae7.setIcon(icon_a9777aaf9d5d4d4d893be32043e8d0f8);
+            
+    
+                var poly_line_f851e82cc72a46dda3b48a78307334cc = L.polyline(
+                    [[41.88917683258, -87.6385057718], [41.882134, -87.625125]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_092423fb93d04fa5aa2cbf9187c78483 = L.marker(
+                [41.879255,-87.639904],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_08c5c68a8d4a4968a45820f8e0565b8b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_092423fb93d04fa5aa2cbf9187c78483.setIcon(icon_08c5c68a8d4a4968a45820f8e0565b8b);
+            
+    
+            var popup_c2c65ec072a64559b9f8874e0644e3a0 = L.popup({maxWidth: '300'});
+
+            
+                var html_a73c6320f5aa43479a4e9fdbf9f3b361 = $('<div id="html_a73c6320f5aa43479a4e9fdbf9f3b361" style="width: 100.0%; height: 100.0%;">Canal St & Adams St</div>')[0];
+                popup_c2c65ec072a64559b9f8874e0644e3a0.setContent(html_a73c6320f5aa43479a4e9fdbf9f3b361);
+            
+
+            marker_092423fb93d04fa5aa2cbf9187c78483.bindPopup(popup_c2c65ec072a64559b9f8874e0644e3a0);
+
+            
+        
+    
+                var poly_line_20d8729facda43b1a4adc4d6b92d79ec = L.polyline(
+                    [[41.879255, -87.639904], [41.882242, -87.64106600000002]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_bd8e11d75b69487b8e639d96a62c3377 = L.marker(
+                [41.882242,-87.64106600000002],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_4e2e5ebd09364b1c8353af6ba9bc3df1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bd8e11d75b69487b8e639d96a62c3377.setIcon(icon_4e2e5ebd09364b1c8353af6ba9bc3df1);
+            
+    
+                var poly_line_fb501212bf334582893f5f4985c7ba81 = L.polyline(
+                    [[41.879255, -87.639904], [41.882242, -87.64106600000002]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_5327289c1c8e4c0797b434c83d692386 = L.marker(
+                [41.88338,-87.64116999999996],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_5a3b5b781719448c9a8131cf2507b749 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5327289c1c8e4c0797b434c83d692386.setIcon(icon_5a3b5b781719448c9a8131cf2507b749);
+            
+    
+            var popup_f29832a9e0394df68f5d22058ca7f13a = L.popup({maxWidth: '300'});
+
+            
+                var html_9ef634e0a75d4dab9d0266f325b36bf5 = $('<div id="html_9ef634e0a75d4dab9d0266f325b36bf5" style="width: 100.0%; height: 100.0%;">Clinton St & Washington Blvd</div>')[0];
+                popup_f29832a9e0394df68f5d22058ca7f13a.setContent(html_9ef634e0a75d4dab9d0266f325b36bf5);
+            
+
+            marker_5327289c1c8e4c0797b434c83d692386.bindPopup(popup_f29832a9e0394df68f5d22058ca7f13a);
+
+            
+        
+    
+                var poly_line_627032e3d5c1471ab55e01472453854c = L.polyline(
+                    [[41.88338, -87.64116999999996], [41.888243, -87.63639]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_447edab418a147d58e1d1b860d4302c0 = L.marker(
+                [41.888243,-87.63639],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_9eb0a355d43644a295893e53dc8341bc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_447edab418a147d58e1d1b860d4302c0.setIcon(icon_9eb0a355d43644a295893e53dc8341bc);
+            
+    
+                var poly_line_c09ff8ebd85c43bfa9d58b9a3fc6f4a9 = L.polyline(
+                    [[41.88338, -87.64116999999996], [41.888243, -87.63639]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_79c2abb02070410b89d1101a36e976b7 = L.marker(
+                [41.88338,-87.64116999999996],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_eb2186e30ca9404c8b9c80114ead2177 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_79c2abb02070410b89d1101a36e976b7.setIcon(icon_eb2186e30ca9404c8b9c80114ead2177);
+            
+    
+            var popup_7e6f8bb867cd43929d07b3cffabf4152 = L.popup({maxWidth: '300'});
+
+            
+                var html_63f8bcd808e740059b1b26029ce0df29 = $('<div id="html_63f8bcd808e740059b1b26029ce0df29" style="width: 100.0%; height: 100.0%;">Clinton St & Washington Blvd</div>')[0];
+                popup_7e6f8bb867cd43929d07b3cffabf4152.setContent(html_63f8bcd808e740059b1b26029ce0df29);
+            
+
+            marker_79c2abb02070410b89d1101a36e976b7.bindPopup(popup_7e6f8bb867cd43929d07b3cffabf4152);
+
+            
+        
+    
+                var poly_line_2e4887606e1c40fd9e0788842300222e = L.polyline(
+                    [[41.88338, -87.64116999999996], [41.894448, -87.622663]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_e47bf49c1385482b9358769df919d74c = L.marker(
+                [41.894448,-87.622663],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_c44092d5effa48a4875771a1de6cf2c7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e47bf49c1385482b9358769df919d74c.setIcon(icon_c44092d5effa48a4875771a1de6cf2c7);
+            
+    
+                var poly_line_566c68f3309b4bf89ead486ae849cd6d = L.polyline(
+                    [[41.88338, -87.64116999999996], [41.894448, -87.622663]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_57b06e73ccef45f19bbe9ec67869c4c1 = L.marker(
+                [41.88917683258,-87.6385057718],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_ddf972b26a0446cb93ff577e238d9f28 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_57b06e73ccef45f19bbe9ec67869c4c1.setIcon(icon_ddf972b26a0446cb93ff577e238d9f28);
+            
+    
+            var popup_ebe3c07c7b0a48069c01169bfadc6b31 = L.popup({maxWidth: '300'});
+
+            
+                var html_d4bdeda961904369ad00d1abf60ff2cb = $('<div id="html_d4bdeda961904369ad00d1abf60ff2cb" style="width: 100.0%; height: 100.0%;">Kingsbury St & Kinzie St</div>')[0];
+                popup_ebe3c07c7b0a48069c01169bfadc6b31.setContent(html_d4bdeda961904369ad00d1abf60ff2cb);
+            
+
+            marker_57b06e73ccef45f19bbe9ec67869c4c1.bindPopup(popup_ebe3c07c7b0a48069c01169bfadc6b31);
+
+            
+        
+    
+                var poly_line_fa7f814288c44385acdee25506652226 = L.polyline(
+                    [[41.88917683258, -87.6385057718], [41.880422, -87.642746]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_3b10b1cd377047e1b507f69bc47fe2bb = L.marker(
+                [41.880422,-87.642746],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_4c8d56fc06244cc4b09115b558dfc5b8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3b10b1cd377047e1b507f69bc47fe2bb.setIcon(icon_4c8d56fc06244cc4b09115b558dfc5b8);
+            
+    
+                var poly_line_8d8ecf347f904c73b4e566a8f6ecc34c = L.polyline(
+                    [[41.88917683258, -87.6385057718], [41.880422, -87.642746]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_56de318680b3423baf4eb054455ee255 = L.marker(
+                [41.879255,-87.639904],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_e499c28d01be4efa8bb68f175a64403c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_56de318680b3423baf4eb054455ee255.setIcon(icon_e499c28d01be4efa8bb68f175a64403c);
+            
+    
+            var popup_8369b9c4675d44abaa6a574f98d28b58 = L.popup({maxWidth: '300'});
+
+            
+                var html_68ec4e4071c04ee9a8b81f63275bb953 = $('<div id="html_68ec4e4071c04ee9a8b81f63275bb953" style="width: 100.0%; height: 100.0%;">Canal St & Adams St</div>')[0];
+                popup_8369b9c4675d44abaa6a574f98d28b58.setContent(html_68ec4e4071c04ee9a8b81f63275bb953);
+            
+
+            marker_56de318680b3423baf4eb054455ee255.bindPopup(popup_8369b9c4675d44abaa6a574f98d28b58);
+
+            
+        
+    
+                var poly_line_6d43c9d2ca0546709a957975e4273374 = L.polyline(
+                    [[41.879255, -87.639904], [41.8854833079, -87.6523048564]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_fd2675a0a52a42008d1ee036a360070f = L.marker(
+                [41.8854833079,-87.6523048564],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_9da6f480ad944eb5811d0462ba8c061a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fd2675a0a52a42008d1ee036a360070f.setIcon(icon_9da6f480ad944eb5811d0462ba8c061a);
+            
+    
+                var poly_line_c6686c3b4f444205a71085a1f7ba3344 = L.polyline(
+                    [[41.879255, -87.639904], [41.8854833079, -87.6523048564]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_58ab9ac9dd064aff880c32ab4d99c436 = L.marker(
+                [41.88338,-87.64116999999996],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_bfdd090952114ab280a02ed0836aa257 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_58ab9ac9dd064aff880c32ab4d99c436.setIcon(icon_bfdd090952114ab280a02ed0836aa257);
+            
+    
+            var popup_71898a0257864f11b4ab1d0fcac31521 = L.popup({maxWidth: '300'});
+
+            
+                var html_eae09609a7ee41dc99e09ab3b5c5fd29 = $('<div id="html_eae09609a7ee41dc99e09ab3b5c5fd29" style="width: 100.0%; height: 100.0%;">Clinton St & Washington Blvd</div>')[0];
+                popup_71898a0257864f11b4ab1d0fcac31521.setContent(html_eae09609a7ee41dc99e09ab3b5c5fd29);
+            
+
+            marker_58ab9ac9dd064aff880c32ab4d99c436.bindPopup(popup_71898a0257864f11b4ab1d0fcac31521);
+
+            
+        
+    
+                var poly_line_aeae8cb819f34b66b3df279fe35aaa7a = L.polyline(
+                    [[41.88338, -87.64116999999996], [41.8838927658, -87.6246491409]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_b6eecccfd2194f08ba5df8dc850e3e19 = L.marker(
+                [41.8838927658,-87.6246491409],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_4d1d605104c342bb95672b96e707810a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b6eecccfd2194f08ba5df8dc850e3e19.setIcon(icon_4d1d605104c342bb95672b96e707810a);
+            
+    
+                var poly_line_26bd664fa43846079ffaeca5863e04d5 = L.polyline(
+                    [[41.88338, -87.64116999999996], [41.8838927658, -87.6246491409]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_13fcb97837ca4f6b883574caebfa6a34 = L.marker(
+                [41.88338,-87.64116999999996],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_c72de91ea585467193627ce19e847704 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_13fcb97837ca4f6b883574caebfa6a34.setIcon(icon_c72de91ea585467193627ce19e847704);
+            
+    
+            var popup_9e19b24b0074421ebd94394bc59fc73e = L.popup({maxWidth: '300'});
+
+            
+                var html_e55f34761f5e42d1a30ee3bdecfee6be = $('<div id="html_e55f34761f5e42d1a30ee3bdecfee6be" style="width: 100.0%; height: 100.0%;">Clinton St & Washington Blvd</div>')[0];
+                popup_9e19b24b0074421ebd94394bc59fc73e.setContent(html_e55f34761f5e42d1a30ee3bdecfee6be);
+            
+
+            marker_13fcb97837ca4f6b883574caebfa6a34.bindPopup(popup_9e19b24b0074421ebd94394bc59fc73e);
+
+            
+        
+    
+                var poly_line_ea7b9ca0907c48ffa3e8f35b5723a696 = L.polyline(
+                    [[41.88338, -87.64116999999996], [41.890011, -87.626293]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_6ce6614598be417b99113215b8215e2f = L.marker(
+                [41.890011,-87.626293],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_bf111b5dfe6344848fd65f7de6b3a6d1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6ce6614598be417b99113215b8215e2f.setIcon(icon_bf111b5dfe6344848fd65f7de6b3a6d1);
+            
+    
+                var poly_line_ae65245777394292950c35b79e7e7574 = L.polyline(
+                    [[41.88338, -87.64116999999996], [41.890011, -87.626293]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_7bde8035729342468028b42e59d503c6 = L.marker(
+                [41.88338,-87.64116999999996],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_11dd997a53fd450abcb005edbc549aa0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7bde8035729342468028b42e59d503c6.setIcon(icon_11dd997a53fd450abcb005edbc549aa0);
+            
+    
+            var popup_c697d56e1cef4d5bb64a6133cb44aa50 = L.popup({maxWidth: '300'});
+
+            
+                var html_448bf73acea7418394862cd80ada3a76 = $('<div id="html_448bf73acea7418394862cd80ada3a76" style="width: 100.0%; height: 100.0%;">Clinton St & Washington Blvd</div>')[0];
+                popup_c697d56e1cef4d5bb64a6133cb44aa50.setContent(html_448bf73acea7418394862cd80ada3a76);
+            
+
+            marker_7bde8035729342468028b42e59d503c6.bindPopup(popup_c697d56e1cef4d5bb64a6133cb44aa50);
+
+            
+        
+    
+                var poly_line_eb8713ab444049a582f3102d620e336f = L.polyline(
+                    [[41.88338, -87.64116999999996], [41.894448, -87.622663]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_e22f4cadd14145e3a335b240d8b9092d = L.marker(
+                [41.894448,-87.622663],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_dd82a7c98c2546e9ae5784b7756a5efc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e22f4cadd14145e3a335b240d8b9092d.setIcon(icon_dd82a7c98c2546e9ae5784b7756a5efc);
+            
+    
+                var poly_line_c58eac64293d4bf5ba9ce2b1abb2a18f = L.polyline(
+                    [[41.88338, -87.64116999999996], [41.894448, -87.622663]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_4db76aa17c484bfea4b2b92c1ed8c2b5 = L.marker(
+                [41.879255,-87.639904],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_f9d812e0919c450f9b7f72efb61633dd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4db76aa17c484bfea4b2b92c1ed8c2b5.setIcon(icon_f9d812e0919c450f9b7f72efb61633dd);
+            
+    
+            var popup_a48ce070338a43c0874f264b515e4c2f = L.popup({maxWidth: '300'});
+
+            
+                var html_58b9090b5a764cb7b07c48e0a448f2d1 = $('<div id="html_58b9090b5a764cb7b07c48e0a448f2d1" style="width: 100.0%; height: 100.0%;">Canal St & Adams St</div>')[0];
+                popup_a48ce070338a43c0874f264b515e4c2f.setContent(html_58b9090b5a764cb7b07c48e0a448f2d1);
+            
+
+            marker_4db76aa17c484bfea4b2b92c1ed8c2b5.bindPopup(popup_a48ce070338a43c0874f264b515e4c2f);
+
+            
+        
+    
+                var poly_line_1148f2efe33a461693efd788763cd41a = L.polyline(
+                    [[41.879255, -87.639904], [41.886875, -87.62603]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_853d58c4320045aa922f0d9f161dfd9b = L.marker(
+                [41.886875,-87.62603],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_5bb4f4f4b9964b79a0b369b64ddcf577 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_853d58c4320045aa922f0d9f161dfd9b.setIcon(icon_5bb4f4f4b9964b79a0b369b64ddcf577);
+            
+    
+                var poly_line_055d6a39e4904621b623c696a0431c71 = L.polyline(
+                    [[41.879255, -87.639904], [41.886875, -87.62603]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_39205e9cd1464db19289ffac34ad39b5 = L.marker(
+                [41.880317,-87.63518499999998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_8271667307234d709504b52b4fa8c04e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_39205e9cd1464db19289ffac34ad39b5.setIcon(icon_8271667307234d709504b52b4fa8c04e);
+            
+    
+            var popup_b166fddefc70409b8657f64777cc0c6e = L.popup({maxWidth: '300'});
+
+            
+                var html_44e1337e1b484ae79cea658734c918fe = $('<div id="html_44e1337e1b484ae79cea658734c918fe" style="width: 100.0%; height: 100.0%;">Franklin St & Monroe St</div>')[0];
+                popup_b166fddefc70409b8657f64777cc0c6e.setContent(html_44e1337e1b484ae79cea658734c918fe);
+            
+
+            marker_39205e9cd1464db19289ffac34ad39b5.bindPopup(popup_b166fddefc70409b8657f64777cc0c6e);
+
+            
+        
+    
+                var poly_line_14d9776cf8254dca9f27ace51a52147a = L.polyline(
+                    [[41.880317, -87.63518499999998], [41.877181, -87.627844]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_9622f532265c425faf26adb2844db620 = L.marker(
+                [41.877181,-87.627844],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_111fd0d2a5ca47d98738b409169215b7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9622f532265c425faf26adb2844db620.setIcon(icon_111fd0d2a5ca47d98738b409169215b7);
+            
+    
+                var poly_line_e393c3785ceb4e8c92bb1752d4235de5 = L.polyline(
+                    [[41.880317, -87.63518499999998], [41.877181, -87.627844]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_fa7bacce5c3e4a5d93b4a07463d83a8f = L.marker(
+                [41.880317,-87.63518499999998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_e450c4f0d904445083851d0e5552bd67 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fa7bacce5c3e4a5d93b4a07463d83a8f.setIcon(icon_e450c4f0d904445083851d0e5552bd67);
+            
+    
+            var popup_c2bdd051f6b242a39af4e56fea5e847a = L.popup({maxWidth: '300'});
+
+            
+                var html_a7d37f8d80ec4e7babcadbc2992b3b09 = $('<div id="html_a7d37f8d80ec4e7babcadbc2992b3b09" style="width: 100.0%; height: 100.0%;">Franklin St & Monroe St</div>')[0];
+                popup_c2bdd051f6b242a39af4e56fea5e847a.setContent(html_a7d37f8d80ec4e7babcadbc2992b3b09);
+            
+
+            marker_fa7bacce5c3e4a5d93b4a07463d83a8f.bindPopup(popup_c2bdd051f6b242a39af4e56fea5e847a);
+
+            
+        
+    
+                var poly_line_e012de337f0a42f9b1cb1b09d3e0c6cf = L.polyline(
+                    [[41.880317, -87.63518499999998], [41.8838927658, -87.6246491409]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_e72b05def7bc4514884368804c97bb9b = L.marker(
+                [41.8838927658,-87.6246491409],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_5ca3017f7b6f4370bae9a359e3a56d76 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e72b05def7bc4514884368804c97bb9b.setIcon(icon_5ca3017f7b6f4370bae9a359e3a56d76);
+            
+    
+                var poly_line_9281694b599141249e74695fdb435f47 = L.polyline(
+                    [[41.880317, -87.63518499999998], [41.8838927658, -87.6246491409]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_dbcbb6b2f1734af8b53826b0e90f075e = L.marker(
+                [41.880317,-87.63518499999998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_3a2beee9ef6c48ac9979dd5a09117d69 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dbcbb6b2f1734af8b53826b0e90f075e.setIcon(icon_3a2beee9ef6c48ac9979dd5a09117d69);
+            
+    
+            var popup_c7a948442d39430f8678896c7a88bac1 = L.popup({maxWidth: '300'});
+
+            
+                var html_478818783dba4a4b8dc6bfe86107e2bf = $('<div id="html_478818783dba4a4b8dc6bfe86107e2bf" style="width: 100.0%; height: 100.0%;">Franklin St & Monroe St</div>')[0];
+                popup_c7a948442d39430f8678896c7a88bac1.setContent(html_478818783dba4a4b8dc6bfe86107e2bf);
+            
+
+            marker_dbcbb6b2f1734af8b53826b0e90f075e.bindPopup(popup_c7a948442d39430f8678896c7a88bac1);
+
+            
+        
+    
+                var poly_line_4cdb0fac29bd47718a766ef47d66208c = L.polyline(
+                    [[41.880317, -87.63518499999998], [41.87817, -87.631985]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_a00bb141d00640a297faf3444883709e = L.marker(
+                [41.87817,-87.631985],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_4cc636cb44b14b9a8dd07505006f812c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a00bb141d00640a297faf3444883709e.setIcon(icon_4cc636cb44b14b9a8dd07505006f812c);
+            
+    
+                var poly_line_360b772542ed47deb85fef9709882371 = L.polyline(
+                    [[41.880317, -87.63518499999998], [41.87817, -87.631985]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_e2b5575725934a189a65b57b148ad0c2 = L.marker(
+                [41.880317,-87.63518499999998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_f6b55dd341374c2caaf36eff0f86ac13 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e2b5575725934a189a65b57b148ad0c2.setIcon(icon_f6b55dd341374c2caaf36eff0f86ac13);
+            
+    
+            var popup_95cda49337574b2eb6a79bc2f2b9e619 = L.popup({maxWidth: '300'});
+
+            
+                var html_10910b3f6fc64c2283b9ac54cb5c1e97 = $('<div id="html_10910b3f6fc64c2283b9ac54cb5c1e97" style="width: 100.0%; height: 100.0%;">Franklin St & Monroe St</div>')[0];
+                popup_95cda49337574b2eb6a79bc2f2b9e619.setContent(html_10910b3f6fc64c2283b9ac54cb5c1e97);
+            
+
+            marker_e2b5575725934a189a65b57b148ad0c2.bindPopup(popup_95cda49337574b2eb6a79bc2f2b9e619);
+
+            
+        
+    
+                var poly_line_4d81f18b40754b2cad2a651767771ad6 = L.polyline(
+                    [[41.880317, -87.63518499999998], [41.88338, -87.64116999999996]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_97e5de8c681041f0a4b078d8c523214a = L.marker(
+                [41.88338,-87.64116999999996],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_055828bfb2914aa8a5d2c5e74314126d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_97e5de8c681041f0a4b078d8c523214a.setIcon(icon_055828bfb2914aa8a5d2c5e74314126d);
+            
+    
+                var poly_line_dddd17348fc34e119f1ce5b5652ef383 = L.polyline(
+                    [[41.880317, -87.63518499999998], [41.88338, -87.64116999999996]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_90dbea77a6964fadb86b39acbd7c6b21 = L.marker(
+                [41.880317,-87.63518499999998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_654f2bb2a4b04b10ab9b0bd31b74939b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_90dbea77a6964fadb86b39acbd7c6b21.setIcon(icon_654f2bb2a4b04b10ab9b0bd31b74939b);
+            
+    
+            var popup_e64b5002af844cd184068aa40cdd8a18 = L.popup({maxWidth: '300'});
+
+            
+                var html_97253daa083b4efb9a8fcb26266f1ee6 = $('<div id="html_97253daa083b4efb9a8fcb26266f1ee6" style="width: 100.0%; height: 100.0%;">Franklin St & Monroe St</div>')[0];
+                popup_e64b5002af844cd184068aa40cdd8a18.setContent(html_97253daa083b4efb9a8fcb26266f1ee6);
+            
+
+            marker_90dbea77a6964fadb86b39acbd7c6b21.bindPopup(popup_e64b5002af844cd184068aa40cdd8a18);
+
+            
+        
+    
+                var poly_line_9050f45c745e45a7b636403cc802bec7 = L.polyline(
+                    [[41.880317, -87.63518499999998], [41.87947235235, -87.6256886059]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_173690edd6624504bcf1948ec569f026 = L.marker(
+                [41.87947235235,-87.6256886059],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_13bb1f83ee63417ca0ecf9b39f3be12c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_173690edd6624504bcf1948ec569f026.setIcon(icon_13bb1f83ee63417ca0ecf9b39f3be12c);
+            
+    
+                var poly_line_9f7849e148004cfdb49d96b9585fb4be = L.polyline(
+                    [[41.880317, -87.63518499999998], [41.87947235235, -87.6256886059]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_28f32e0e0bb14122bd1e189a67c62c80 = L.marker(
+                [41.880317,-87.63518499999998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_3bf2e4e0d7464243ba44337943c31cd2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_28f32e0e0bb14122bd1e189a67c62c80.setIcon(icon_3bf2e4e0d7464243ba44337943c31cd2);
+            
+    
+            var popup_f9d83fbc74ef418bb987d466e00c364d = L.popup({maxWidth: '300'});
+
+            
+                var html_e36c7bf33ea94e9b958ea49f12387756 = $('<div id="html_e36c7bf33ea94e9b958ea49f12387756" style="width: 100.0%; height: 100.0%;">Franklin St & Monroe St</div>')[0];
+                popup_f9d83fbc74ef418bb987d466e00c364d.setContent(html_e36c7bf33ea94e9b958ea49f12387756);
+            
+
+            marker_28f32e0e0bb14122bd1e189a67c62c80.bindPopup(popup_f9d83fbc74ef418bb987d466e00c364d);
+
+            
+        
+    
+                var poly_line_a629c1f2d1c143f3975fdf41dc5bc26e = L.polyline(
+                    [[41.880317, -87.63518499999998], [41.886024, -87.624117]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+            var marker_8663962b6cc04fb1b1968f289a3fcb64 = L.marker(
+                [41.886024,-87.624117],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+    
+
+                var icon_6a3c1bfd706948ac814b1338754433f5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8663962b6cc04fb1b1968f289a3fcb64.setIcon(icon_6a3c1bfd706948ac814b1338754433f5);
+            
+    
+                var poly_line_4130550c095b4dd3ac5f803a2d519fa4 = L.polyline(
+                    [[41.880317, -87.63518499999998], [41.886024, -87.624117]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_ac7778b59fc54a5d9b86b9707013fe0f);
+            
+</script>

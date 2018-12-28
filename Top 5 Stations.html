@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_a4a303caa5dd4f00869f725cf47e8f20 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a4a303caa5dd4f00869f725cf47e8f20" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_a4a303caa5dd4f00869f725cf47e8f20 = L.map(
+                                  'map_a4a303caa5dd4f00869f725cf47e8f20',
+                                  {center: [41.881832,-87.623177],
+                                  zoom: 15,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_76cc7af472fc4f64902d3f9eb1baedc1 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_a4a303caa5dd4f00869f725cf47e8f20);
+        
+    
+
+            var marker_c90dd38c9c644205814620611865ad2d = L.marker(
+                [41.88338,-87.64116999999996],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a4a303caa5dd4f00869f725cf47e8f20);
+            
+    
+
+                var icon_7bbe05c6e45b4b09a40627f69e37c09d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c90dd38c9c644205814620611865ad2d.setIcon(icon_7bbe05c6e45b4b09a40627f69e37c09d);
+            
+    
+            var popup_4999fb0624954b949789e8bc7e4feb5d = L.popup({maxWidth: '300'});
+
+            
+                var html_b9953b9b1b104fc7ae6424cd9bc6b3a3 = $('<div id="html_b9953b9b1b104fc7ae6424cd9bc6b3a3" style="width: 100.0%; height: 100.0%;">Damen Ave & Grand Ave</div>')[0];
+                popup_4999fb0624954b949789e8bc7e4feb5d.setContent(html_b9953b9b1b104fc7ae6424cd9bc6b3a3);
+            
+
+            marker_c90dd38c9c644205814620611865ad2d.bindPopup(popup_4999fb0624954b949789e8bc7e4feb5d);
+
+            
+        
+    
+
+            var marker_91e2d1e0619647bc860b23385f1d4ca9 = L.marker(
+                [41.880317,-87.63518499999998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a4a303caa5dd4f00869f725cf47e8f20);
+            
+    
+
+                var icon_6e39d4a125d441b096133c1afceedc43 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_91e2d1e0619647bc860b23385f1d4ca9.setIcon(icon_6e39d4a125d441b096133c1afceedc43);
+            
+    
+            var popup_a361da1adbde46f583dccdd6fe6d4304 = L.popup({maxWidth: '300'});
+
+            
+                var html_95fa86d9850249ea890acf6ab82e8771 = $('<div id="html_95fa86d9850249ea890acf6ab82e8771" style="width: 100.0%; height: 100.0%;">Western Ave & Walton St</div>')[0];
+                popup_a361da1adbde46f583dccdd6fe6d4304.setContent(html_95fa86d9850249ea890acf6ab82e8771);
+            
+
+            marker_91e2d1e0619647bc860b23385f1d4ca9.bindPopup(popup_a361da1adbde46f583dccdd6fe6d4304);
+
+            
+        
+    
+
+            var marker_405ee436da1b47c196b433e26f65d161 = L.marker(
+                [41.879255,-87.639904],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a4a303caa5dd4f00869f725cf47e8f20);
+            
+    
+
+                var icon_4bdbb3cdf61742cba051bfd28f7184b4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_405ee436da1b47c196b433e26f65d161.setIcon(icon_4bdbb3cdf61742cba051bfd28f7184b4);
+            
+    
+            var popup_a9085b42656a4718b22e02e6aa1f53bd = L.popup({maxWidth: '300'});
+
+            
+                var html_f82b33f201704b24a545e45d3c20efe2 = $('<div id="html_f82b33f201704b24a545e45d3c20efe2" style="width: 100.0%; height: 100.0%;">Clark St & Wellington Ave</div>')[0];
+                popup_a9085b42656a4718b22e02e6aa1f53bd.setContent(html_f82b33f201704b24a545e45d3c20efe2);
+            
+
+            marker_405ee436da1b47c196b433e26f65d161.bindPopup(popup_a9085b42656a4718b22e02e6aa1f53bd);
+
+            
+        
+    
+
+            var marker_93030c8cfd0e4ccf9236a6997cbef0f2 = L.marker(
+                [41.882242,-87.64106600000002],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a4a303caa5dd4f00869f725cf47e8f20);
+            
+    
+
+                var icon_64dc5078c48d440ab2925a8d1f3abc99 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_93030c8cfd0e4ccf9236a6997cbef0f2.setIcon(icon_64dc5078c48d440ab2925a8d1f3abc99);
+            
+    
+            var popup_c869efc08b4640a287b5d3d63d6fa2d3 = L.popup({maxWidth: '300'});
+
+            
+                var html_55341dcc40874bb3bc49f4f9747fb73d = $('<div id="html_55341dcc40874bb3bc49f4f9747fb73d" style="width: 100.0%; height: 100.0%;">Ogden Ave & Roosevelt Rd</div>')[0];
+                popup_c869efc08b4640a287b5d3d63d6fa2d3.setContent(html_55341dcc40874bb3bc49f4f9747fb73d);
+            
+
+            marker_93030c8cfd0e4ccf9236a6997cbef0f2.bindPopup(popup_c869efc08b4640a287b5d3d63d6fa2d3);
+
+            
+        
+    
+
+            var marker_d216df70934e44b492fe2b31f13e0275 = L.marker(
+                [41.88917683,-87.63850577],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a4a303caa5dd4f00869f725cf47e8f20);
+            
+    
+
+                var icon_9ead2b9f7b9d47f486e832869bf90754 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d216df70934e44b492fe2b31f13e0275.setIcon(icon_9ead2b9f7b9d47f486e832869bf90754);
+            
+    
+            var popup_59bdeb90b7474a22aa86e79bf20da7db = L.popup({maxWidth: '300'});
+
+            
+                var html_79b0733a68174314bcecce3bf7afaf12 = $('<div id="html_79b0733a68174314bcecce3bf7afaf12" style="width: 100.0%; height: 100.0%;">Wells St & Concord Ln</div>')[0];
+                popup_59bdeb90b7474a22aa86e79bf20da7db.setContent(html_79b0733a68174314bcecce3bf7afaf12);
+            
+
+            marker_d216df70934e44b492fe2b31f13e0275.bindPopup(popup_59bdeb90b7474a22aa86e79bf20da7db);
+
+            
+        
+</script>

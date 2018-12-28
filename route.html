@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_fd94ac37c534458492b2d098060b2f65 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_fd94ac37c534458492b2d098060b2f65" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_fd94ac37c534458492b2d098060b2f65 = L.map(
+                                  'map_fd94ac37c534458492b2d098060b2f65',
+                                  {center: [41.881832,-87.623177],
+                                  zoom: 14,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_c5e17d3786b64937adf4f37a053e48f2 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_fd94ac37c534458492b2d098060b2f65);
+        
+    
+
+            var marker_b5c76a8b358a40d9a4530f5889dba103 = L.marker(
+                [41.91468,-87.64331999999996],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_baca681d91584016bed91938d047b06a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b5c76a8b358a40d9a4530f5889dba103.setIcon(icon_baca681d91584016bed91938d047b06a);
+            
+    
+            var popup_3a392a414cd4438a9b5da87a9d7eb40b = L.popup({maxWidth: '300'});
+
+            
+                var html_d1fc1e0daca54810989606cf2434d7e6 = $('<div id="html_d1fc1e0daca54810989606cf2434d7e6" style="width: 100.0%; height: 100.0%;">Start Location of Trip 12979231</div>')[0];
+                popup_3a392a414cd4438a9b5da87a9d7eb40b.setContent(html_d1fc1e0daca54810989606cf2434d7e6);
+            
+
+            marker_b5c76a8b358a40d9a4530f5889dba103.bindPopup(popup_3a392a414cd4438a9b5da87a9d7eb40b);
+
+            
+        
+    
+                var poly_line_35ea914cc9b749839aa4b027cfe40d15 = L.polyline(
+                    [[41.91468, -87.64331999999996], [41.910522, -87.65310600000002]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_7f661245a9cf464cb922b636d93e58a2 = L.marker(
+                [41.910522,-87.65310600000002],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_8a5aafbac0e9440b87bebfeba8f43c59 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7f661245a9cf464cb922b636d93e58a2.setIcon(icon_8a5aafbac0e9440b87bebfeba8f43c59);
+            
+    
+            var popup_973040481a0b462594c93b00f012a345 = L.popup({maxWidth: '300'});
+
+            
+                var html_d7c41c670c8b458e9905f932e4865536 = $('<div id="html_d7c41c670c8b458e9905f932e4865536" style="width: 100.0%; height: 100.0%;">End Location of Trip 12979231</div>')[0];
+                popup_973040481a0b462594c93b00f012a345.setContent(html_d7c41c670c8b458e9905f932e4865536);
+            
+
+            marker_7f661245a9cf464cb922b636d93e58a2.bindPopup(popup_973040481a0b462594c93b00f012a345);
+
+            
+        
+    
+                var poly_line_57b155ac24a341538de775f3392bffa1 = L.polyline(
+                    [[41.91468, -87.64331999999996], [41.910522, -87.65310600000002]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_cecbb102640744f99aefb7349bec0b82 = L.marker(
+                [41.898203,-87.637536],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_2892fa318da64912b3056f1ebdf6c18a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cecbb102640744f99aefb7349bec0b82.setIcon(icon_2892fa318da64912b3056f1ebdf6c18a);
+            
+    
+            var popup_0fc3b765d59d4cddb670534a6f55384f = L.popup({maxWidth: '300'});
+
+            
+                var html_f37813eb0e3646e19dd58d34638dd4e5 = $('<div id="html_f37813eb0e3646e19dd58d34638dd4e5" style="width: 100.0%; height: 100.0%;">Start Location of Trip 12979232</div>')[0];
+                popup_0fc3b765d59d4cddb670534a6f55384f.setContent(html_f37813eb0e3646e19dd58d34638dd4e5);
+            
+
+            marker_cecbb102640744f99aefb7349bec0b82.bindPopup(popup_0fc3b765d59d4cddb670534a6f55384f);
+
+            
+        
+    
+                var poly_line_74e6de5ef5724ee5b3b52d840374af7e = L.polyline(
+                    [[41.898203, -87.637536], [41.907066, -87.667252]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_0510c1486bd84e0cb4a3a5bbf349d179 = L.marker(
+                [41.907066,-87.667252],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_6e9a29f080704ccdaf7f4d73cad81a95 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0510c1486bd84e0cb4a3a5bbf349d179.setIcon(icon_6e9a29f080704ccdaf7f4d73cad81a95);
+            
+    
+            var popup_0b9afa486de84f3c98d7cc8b1a39a416 = L.popup({maxWidth: '300'});
+
+            
+                var html_68988d4b68334081b16fcd0e9f75d1e7 = $('<div id="html_68988d4b68334081b16fcd0e9f75d1e7" style="width: 100.0%; height: 100.0%;">End Location of Trip 12979232</div>')[0];
+                popup_0b9afa486de84f3c98d7cc8b1a39a416.setContent(html_68988d4b68334081b16fcd0e9f75d1e7);
+            
+
+            marker_0510c1486bd84e0cb4a3a5bbf349d179.bindPopup(popup_0b9afa486de84f3c98d7cc8b1a39a416);
+
+            
+        
+    
+                var poly_line_cd2ab299143f428eab258d809f1c83cb = L.polyline(
+                    [[41.898203, -87.637536], [41.907066, -87.667252]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_6c481bf548aa49edaf0fcc6c4784eb61 = L.marker(
+                [41.880317,-87.63518499999998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_0f1c9b910c4e4ba6b11660142a4f000d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6c481bf548aa49edaf0fcc6c4784eb61.setIcon(icon_0f1c9b910c4e4ba6b11660142a4f000d);
+            
+    
+            var popup_d6d9ba00730e4bc88cc4e01aefe4783b = L.popup({maxWidth: '300'});
+
+            
+                var html_5bb427ba095245059ee883aa2877f53a = $('<div id="html_5bb427ba095245059ee883aa2877f53a" style="width: 100.0%; height: 100.0%;">Start Location of Trip 12979233</div>')[0];
+                popup_d6d9ba00730e4bc88cc4e01aefe4783b.setContent(html_5bb427ba095245059ee883aa2877f53a);
+            
+
+            marker_6c481bf548aa49edaf0fcc6c4784eb61.bindPopup(popup_d6d9ba00730e4bc88cc4e01aefe4783b);
+
+            
+        
+    
+                var poly_line_cc313b7562b143d8b46f3d494c96fdab = L.polyline(
+                    [[41.880317, -87.63518499999998], [41.875885, -87.640795]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_520024bf554445aa8c1cd61c0a901634 = L.marker(
+                [41.875885,-87.640795],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_2950e597cda74a93ad3055b0fe72d7ac = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_520024bf554445aa8c1cd61c0a901634.setIcon(icon_2950e597cda74a93ad3055b0fe72d7ac);
+            
+    
+            var popup_0e1b1c06a24c49d39c307658c69b6c8d = L.popup({maxWidth: '300'});
+
+            
+                var html_82253763d6554336ad1c91ffe7c6b755 = $('<div id="html_82253763d6554336ad1c91ffe7c6b755" style="width: 100.0%; height: 100.0%;">End Location of Trip 12979233</div>')[0];
+                popup_0e1b1c06a24c49d39c307658c69b6c8d.setContent(html_82253763d6554336ad1c91ffe7c6b755);
+            
+
+            marker_520024bf554445aa8c1cd61c0a901634.bindPopup(popup_0e1b1c06a24c49d39c307658c69b6c8d);
+
+            
+        
+    
+                var poly_line_7f410dd594654ca69616f8f2703dec8b = L.polyline(
+                    [[41.880317, -87.63518499999998], [41.875885, -87.640795]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_5cbcdd17a73b4d70987ad05265992a3a = L.marker(
+                [41.937725,-87.644095],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_47edcde02a364301bf70c7b6513f7aa4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5cbcdd17a73b4d70987ad05265992a3a.setIcon(icon_47edcde02a364301bf70c7b6513f7aa4);
+            
+    
+            var popup_22e32552a5c24112ac2aece78d549e45 = L.popup({maxWidth: '300'});
+
+            
+                var html_de4873d9631c44578e9679ecb9cbc621 = $('<div id="html_de4873d9631c44578e9679ecb9cbc621" style="width: 100.0%; height: 100.0%;">Start Location of Trip 12979234</div>')[0];
+                popup_22e32552a5c24112ac2aece78d549e45.setContent(html_de4873d9631c44578e9679ecb9cbc621);
+            
+
+            marker_5cbcdd17a73b4d70987ad05265992a3a.bindPopup(popup_22e32552a5c24112ac2aece78d549e45);
+
+            
+        
+    
+                var poly_line_d91f7c363d62499ba95100bc047768de = L.polyline(
+                    [[41.937725, -87.644095], [41.911386, -87.638677]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_2696b74f62bb42ada4118caa3886dc4f = L.marker(
+                [41.911386,-87.638677],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_6708924f012d43bdbf66e37c0e3b70bb = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2696b74f62bb42ada4118caa3886dc4f.setIcon(icon_6708924f012d43bdbf66e37c0e3b70bb);
+            
+    
+            var popup_eba36814ef734646b90d98d91a0a7d50 = L.popup({maxWidth: '300'});
+
+            
+                var html_3bd04239ed724326982c4e4e5e057fac = $('<div id="html_3bd04239ed724326982c4e4e5e057fac" style="width: 100.0%; height: 100.0%;">End Location of Trip 12979234</div>')[0];
+                popup_eba36814ef734646b90d98d91a0a7d50.setContent(html_3bd04239ed724326982c4e4e5e057fac);
+            
+
+            marker_2696b74f62bb42ada4118caa3886dc4f.bindPopup(popup_eba36814ef734646b90d98d91a0a7d50);
+
+            
+        
+    
+                var poly_line_d9f6cec179b4427c9895c7de16c5a223 = L.polyline(
+                    [[41.937725, -87.644095], [41.911386, -87.638677]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_48162bac74fa4bf1a96663f4e090f30d = L.marker(
+                [41.889187,-87.62775400000002],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_ae95b6ed88a54c4a84428c0b08059db4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_48162bac74fa4bf1a96663f4e090f30d.setIcon(icon_ae95b6ed88a54c4a84428c0b08059db4);
+            
+    
+            var popup_b15d01b4386245a29be828c5b64067f4 = L.popup({maxWidth: '300'});
+
+            
+                var html_1140704ab9f8482f9d0f9ec303d169d1 = $('<div id="html_1140704ab9f8482f9d0f9ec303d169d1" style="width: 100.0%; height: 100.0%;">Start Location of Trip 12979235</div>')[0];
+                popup_b15d01b4386245a29be828c5b64067f4.setContent(html_1140704ab9f8482f9d0f9ec303d169d1);
+            
+
+            marker_48162bac74fa4bf1a96663f4e090f30d.bindPopup(popup_b15d01b4386245a29be828c5b64067f4);
+
+            
+        
+    
+                var poly_line_62aa3a259f5a43fe9f95d98801e864c3 = L.polyline(
+                    [[41.889187, -87.62775400000002], [41.872596, -87.63350200000002]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_fda229fd7bba42d7be0ce72497c34404 = L.marker(
+                [41.872596,-87.63350200000002],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_06847b873b9943979b40d7ed2c90cff7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fda229fd7bba42d7be0ce72497c34404.setIcon(icon_06847b873b9943979b40d7ed2c90cff7);
+            
+    
+            var popup_4acc69dc3e454e08b67cfa5d4cb84e13 = L.popup({maxWidth: '300'});
+
+            
+                var html_7f2cda76dc9d4c43bdb17408fd7e8c51 = $('<div id="html_7f2cda76dc9d4c43bdb17408fd7e8c51" style="width: 100.0%; height: 100.0%;">End Location of Trip 12979235</div>')[0];
+                popup_4acc69dc3e454e08b67cfa5d4cb84e13.setContent(html_7f2cda76dc9d4c43bdb17408fd7e8c51);
+            
+
+            marker_fda229fd7bba42d7be0ce72497c34404.bindPopup(popup_4acc69dc3e454e08b67cfa5d4cb84e13);
+
+            
+        
+    
+                var poly_line_1830c0689bb546a5924724ad7bac4c35 = L.polyline(
+                    [[41.889187, -87.62775400000002], [41.872596, -87.63350200000002]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_b0fb7fec627a43f69f2496b72de1a121 = L.marker(
+                [41.886875,-87.62603],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_f0f3ac2e13484f398e8309a9d1c18ec6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b0fb7fec627a43f69f2496b72de1a121.setIcon(icon_f0f3ac2e13484f398e8309a9d1c18ec6);
+            
+    
+            var popup_dd6be8cd93c746ee8c07a04898be0dce = L.popup({maxWidth: '300'});
+
+            
+                var html_c4e666847b6d44719a84154f92336cd7 = $('<div id="html_c4e666847b6d44719a84154f92336cd7" style="width: 100.0%; height: 100.0%;">Start Location of Trip 12979236</div>')[0];
+                popup_dd6be8cd93c746ee8c07a04898be0dce.setContent(html_c4e666847b6d44719a84154f92336cd7);
+            
+
+            marker_b0fb7fec627a43f69f2496b72de1a121.bindPopup(popup_dd6be8cd93c746ee8c07a04898be0dce);
+
+            
+        
+    
+                var poly_line_000a6f034444441fa5ca9d53a948304d = L.polyline(
+                    [[41.886875, -87.62603], [41.875885, -87.640795]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_4154c5e6ac47440286aae0f4488397f4 = L.marker(
+                [41.875885,-87.640795],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_5ba3b1a2d8c040899c5d5962e56d07db = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4154c5e6ac47440286aae0f4488397f4.setIcon(icon_5ba3b1a2d8c040899c5d5962e56d07db);
+            
+    
+            var popup_042ec7b55000440c95440570b60015cb = L.popup({maxWidth: '300'});
+
+            
+                var html_5f9df35a95e44946a7ed3f9e6d3a30d3 = $('<div id="html_5f9df35a95e44946a7ed3f9e6d3a30d3" style="width: 100.0%; height: 100.0%;">End Location of Trip 12979236</div>')[0];
+                popup_042ec7b55000440c95440570b60015cb.setContent(html_5f9df35a95e44946a7ed3f9e6d3a30d3);
+            
+
+            marker_4154c5e6ac47440286aae0f4488397f4.bindPopup(popup_042ec7b55000440c95440570b60015cb);
+
+            
+        
+    
+                var poly_line_4d864e6c872143c8bd798c9d3b601b4d = L.polyline(
+                    [[41.886875, -87.62603], [41.875885, -87.640795]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_343fca97c9c04e6c9bf1f0185555f8ab = L.marker(
+                [41.926277,-87.630834],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_b4c35268bc0b46aaae0dbca00aec93b8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_343fca97c9c04e6c9bf1f0185555f8ab.setIcon(icon_b4c35268bc0b46aaae0dbca00aec93b8);
+            
+    
+            var popup_79ff5ffe461a4a7f80362af22afd480c = L.popup({maxWidth: '300'});
+
+            
+                var html_a0a636521b0645628dc15c33dd57084e = $('<div id="html_a0a636521b0645628dc15c33dd57084e" style="width: 100.0%; height: 100.0%;">Start Location of Trip 12979242</div>')[0];
+                popup_79ff5ffe461a4a7f80362af22afd480c.setContent(html_a0a636521b0645628dc15c33dd57084e);
+            
+
+            marker_343fca97c9c04e6c9bf1f0185555f8ab.bindPopup(popup_79ff5ffe461a4a7f80362af22afd480c);
+
+            
+        
+    
+                var poly_line_7b17006e41e64cd38a2584805ab1e21f = L.polyline(
+                    [[41.926277, -87.630834], [41.92585800000001, -87.638973]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_dc63bb7f11134fbdb5c24cb1360872a5 = L.marker(
+                [41.92585800000001,-87.638973],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_ce73a58eb3de49d799557a514138d4b5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dc63bb7f11134fbdb5c24cb1360872a5.setIcon(icon_ce73a58eb3de49d799557a514138d4b5);
+            
+    
+            var popup_0e0e49d93ea046e8937ad48c89607595 = L.popup({maxWidth: '300'});
+
+            
+                var html_5f6bcdd48af647d7ba466dec620a3712 = $('<div id="html_5f6bcdd48af647d7ba466dec620a3712" style="width: 100.0%; height: 100.0%;">End Location of Trip 12979242</div>')[0];
+                popup_0e0e49d93ea046e8937ad48c89607595.setContent(html_5f6bcdd48af647d7ba466dec620a3712);
+            
+
+            marker_dc63bb7f11134fbdb5c24cb1360872a5.bindPopup(popup_0e0e49d93ea046e8937ad48c89607595);
+
+            
+        
+    
+                var poly_line_9f0c7a2050a44a97a5c1458df14f0df2 = L.polyline(
+                    [[41.926277, -87.630834], [41.92585800000001, -87.638973]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_483b0ea1c1264941b77014ebbf78d529 = L.marker(
+                [41.864883,-87.647071],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_1b46c05f71a34e8d8154a1e33cfcb78d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_483b0ea1c1264941b77014ebbf78d529.setIcon(icon_1b46c05f71a34e8d8154a1e33cfcb78d);
+            
+    
+            var popup_cdfffbfc798a4f40b8f1034025138279 = L.popup({maxWidth: '300'});
+
+            
+                var html_6b0d87023ebf42c98a08a773a0ad0d55 = $('<div id="html_6b0d87023ebf42c98a08a773a0ad0d55" style="width: 100.0%; height: 100.0%;">Start Location of Trip 12979243</div>')[0];
+                popup_cdfffbfc798a4f40b8f1034025138279.setContent(html_6b0d87023ebf42c98a08a773a0ad0d55);
+            
+
+            marker_483b0ea1c1264941b77014ebbf78d529.bindPopup(popup_cdfffbfc798a4f40b8f1034025138279);
+
+            
+        
+    
+                var poly_line_6ad85119b458450c89053a301897e83d = L.polyline(
+                    [[41.864883, -87.647071], [41.857499, -87.646277]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_28c974b30dc44db885d18d173717a1e9 = L.marker(
+                [41.857499,-87.646277],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_6110dbe5ad324bdeb6fedf95bb8f06a8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_28c974b30dc44db885d18d173717a1e9.setIcon(icon_6110dbe5ad324bdeb6fedf95bb8f06a8);
+            
+    
+            var popup_a8ce62c45fa24018b69eec6f1577fbf4 = L.popup({maxWidth: '300'});
+
+            
+                var html_e3ae5de6e72e447ba2b77908bc7425c4 = $('<div id="html_e3ae5de6e72e447ba2b77908bc7425c4" style="width: 100.0%; height: 100.0%;">End Location of Trip 12979243</div>')[0];
+                popup_a8ce62c45fa24018b69eec6f1577fbf4.setContent(html_e3ae5de6e72e447ba2b77908bc7425c4);
+            
+
+            marker_28c974b30dc44db885d18d173717a1e9.bindPopup(popup_a8ce62c45fa24018b69eec6f1577fbf4);
+
+            
+        
+    
+                var poly_line_260ccf5dd0e143dbbabe36152b93d672 = L.polyline(
+                    [[41.864883, -87.647071], [41.857499, -87.646277]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_b17f840732e047d39c81cdc2bbbf651b = L.marker(
+                [41.96909,-87.674237],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_d444dfb5114943898c9724a411a14a01 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b17f840732e047d39c81cdc2bbbf651b.setIcon(icon_d444dfb5114943898c9724a411a14a01);
+            
+    
+            var popup_e34e707f215b40e8a4cd2cbae33147c4 = L.popup({maxWidth: '300'});
+
+            
+                var html_41776675f4c04f9ea11aa1e94f0b2bbc = $('<div id="html_41776675f4c04f9ea11aa1e94f0b2bbc" style="width: 100.0%; height: 100.0%;">Start Location of Trip 12979244</div>')[0];
+                popup_e34e707f215b40e8a4cd2cbae33147c4.setContent(html_41776675f4c04f9ea11aa1e94f0b2bbc);
+            
+
+            marker_b17f840732e047d39c81cdc2bbbf651b.bindPopup(popup_e34e707f215b40e8a4cd2cbae33147c4);
+
+            
+        
+    
+                var poly_line_7416ced8e5764d8b97af7a82e9187d38 = L.polyline(
+                    [[41.96909, -87.674237], [41.957879, -87.649519]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_1523556df6a54438b045615a5b450e56 = L.marker(
+                [41.957879,-87.649519],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_c0e8d74e02b440d6a1e9a31a10c9323d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1523556df6a54438b045615a5b450e56.setIcon(icon_c0e8d74e02b440d6a1e9a31a10c9323d);
+            
+    
+            var popup_f36a5aa86290476196bbae1c87b08521 = L.popup({maxWidth: '300'});
+
+            
+                var html_592df2351983473cbf230bf9e752de02 = $('<div id="html_592df2351983473cbf230bf9e752de02" style="width: 100.0%; height: 100.0%;">End Location of Trip 12979244</div>')[0];
+                popup_f36a5aa86290476196bbae1c87b08521.setContent(html_592df2351983473cbf230bf9e752de02);
+            
+
+            marker_1523556df6a54438b045615a5b450e56.bindPopup(popup_f36a5aa86290476196bbae1c87b08521);
+
+            
+        
+    
+                var poly_line_a68fec2d379e41ac9ac52a14a3e222bb = L.polyline(
+                    [[41.96909, -87.674237], [41.957879, -87.649519]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_fa86d794318548bc821e93a31d6f03b8 = L.marker(
+                [41.8759326655,-87.63058453549999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_1d2a7c484c594be4a8ce0e30ade5f44b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fa86d794318548bc821e93a31d6f03b8.setIcon(icon_1d2a7c484c594be4a8ce0e30ade5f44b);
+            
+    
+            var popup_f361e63de7a641cfa36cf15dcb718b83 = L.popup({maxWidth: '300'});
+
+            
+                var html_a371768f33ab42c99db6c82a9c7ab6f9 = $('<div id="html_a371768f33ab42c99db6c82a9c7ab6f9" style="width: 100.0%; height: 100.0%;">Start Location of Trip 12979245</div>')[0];
+                popup_f361e63de7a641cfa36cf15dcb718b83.setContent(html_a371768f33ab42c99db6c82a9c7ab6f9);
+            
+
+            marker_fa86d794318548bc821e93a31d6f03b8.bindPopup(popup_f361e63de7a641cfa36cf15dcb718b83);
+
+            
+        
+    
+                var poly_line_e7860b733fcd4a7ca47ca89cf7e186f9 = L.polyline(
+                    [[41.8759326655, -87.63058453549999], [41.871262, -87.673688]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+            var marker_1a825c0955d8441284014d754edee90e = L.marker(
+                [41.871262,-87.673688],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+    
+
+                var icon_ec888dcc125043e194b36b6bfa5a7612 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1a825c0955d8441284014d754edee90e.setIcon(icon_ec888dcc125043e194b36b6bfa5a7612);
+            
+    
+            var popup_5ab2d64a2d7c438c886d516f05d08667 = L.popup({maxWidth: '300'});
+
+            
+                var html_06280707ec7e4aa2b9a75228001a784f = $('<div id="html_06280707ec7e4aa2b9a75228001a784f" style="width: 100.0%; height: 100.0%;">End Location of Trip 12979245</div>')[0];
+                popup_5ab2d64a2d7c438c886d516f05d08667.setContent(html_06280707ec7e4aa2b9a75228001a784f);
+            
+
+            marker_1a825c0955d8441284014d754edee90e.bindPopup(popup_5ab2d64a2d7c438c886d516f05d08667);
+
+            
+        
+    
+                var poly_line_3ddeb659c1794725bcfff78be6330715 = L.polyline(
+                    [[41.8759326655, -87.63058453549999], [41.871262, -87.673688]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(map_fd94ac37c534458492b2d098060b2f65);
+            
+</script>
